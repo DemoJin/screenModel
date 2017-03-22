@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>screenModel</title>
-    <link rel="stylesheet" href="css/screenModel.css">
+    <link rel="stylesheet" href="dist/css/screenModel.css">
     <style>
-       
+       .demo li{
+            display: inline-block;
+            margin: 2vw;
+            padding: 2vh;
+            background: hsla(200,60%,60%,.9);
+       }
     </style>
 </head>
 <body>
@@ -19,8 +24,8 @@
     	<div class="screenBg"></div> 
     </div>
 
-    <script src="libs/jquery/jquery.min.js"></script>
-    <script src="libs/screenModel.js"></script>
+    <script src="dist/js/jquery/jquery.min.js"></script>
+    <script src="dist/js/screenModel.js"></script>
     <script>
     	//demo
     	var linkId;
@@ -40,10 +45,10 @@
     		var curScreen = new screenModel({
     		    parent: '#myScreen',//创建对象id
     		    linkId: linkId,//链接对象id
-    		    urlStart:'',//配置相对路径
-    		    url : 'http://on7m39ms4.bkt.clouddn.com/screenModelzf.json',//弹窗url
-    		    childUrl : 'http://on7m39ms4.bkt.clouddn.com/screenModelChangezf.json',
-    		    sureUrl : 'http://on7m39ms4.bkt.clouddn.com/test/screenModelSure.json'
+    		    urlStart:'http://on7m39ms4.bkt.clouddn.com',//配置相对路径
+    		    url : '/screenModel.json',//弹窗url
+    		    childUrl : '/screenModelChange.json',
+    		    sureUrl : '/screenModelSure.json'
     		});
     	};
 
