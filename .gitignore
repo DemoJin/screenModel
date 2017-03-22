@@ -1,7 +1,7 @@
 .DS_Store
 node_modules/
 gulpfile.js
-scss/
-libs/
-img/
-test/
+/scss
+/libs
+/img
+/test
